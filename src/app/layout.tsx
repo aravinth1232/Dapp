@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from 'react-hot-toast'; 
+// import Toaster from "../app/components/Toaster"
 
 export const metadata: Metadata = {
   title: "Dapp",
@@ -14,6 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Toaster 
+        position="top-right"
+        />
         {children}
       </body>
     </html>
